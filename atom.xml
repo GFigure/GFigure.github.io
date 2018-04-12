@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.dongfei.xin/"/>
-  <updated>2018-04-12T04:21:49.509Z</updated>
+  <updated>2018-04-12T01:54:51.335Z</updated>
   <id>http://blog.dongfei.xin/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://blog.dongfei.xin/2018-04-12/hello-world/"/>
-    <id>http://blog.dongfei.xin/2018-04-12/hello-world/</id>
-    <published>2018-04-12T04:21:49.508Z</published>
-    <updated>2018-04-12T04:21:49.509Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Scrapinghub 的 Scrapy 技巧系列（六）</title>
@@ -571,6 +550,33 @@
       <category term="Python" scheme="http://blog.dongfei.xin/tags/Python/"/>
     
       <category term="Selenium" scheme="http://blog.dongfei.xin/tags/Selenium/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scrapy 基础知识（六）</title>
+    <link href="http://blog.dongfei.xin/2017-12-12/Scrapy%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%EF%BC%88%E5%85%AD%EF%BC%89/"/>
+    <id>http://blog.dongfei.xin/2017-12-12/Scrapy 基础知识（六）/</id>
+    <published>2017-12-12T12:14:25.000Z</published>
+    <updated>2018-03-27T05:43:57.349Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://wiki.jikexueyuan.com/project/scrapy/" target="_blank" rel="noopener">Scrapy 中文指南</a><br><a href="https://doc.scrapy.org/en/latest/index.html" target="_blank" rel="noopener">Scrapy 1.4 Documentation</a></p><p><strong>scrapy 的暂停与重启</strong><br>不同的spider不能共用同一个目录、不同的run下不能共用同一个目录<br><strong>ctrl+c</strong> 暂停爬虫、点击两次、结束爬虫<br><a id="more"></a><br>保存爬虫状态、注意一定是 <strong>JOBDIR</strong><br><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">scrapy </span>crawl <span class="keyword">jobbole </span>-s <span class="keyword">JOBDIR=jobbole_info/001</span></span><br></pre></td></tr></table></figure></p><p><strong>scrapy url去重原理</strong><br>去重的中间件：<code>Lib/site-packages/scrapy/dupefilters.py</code><br><strong>scrapy telnet服务</strong><br><a href="http://wiki.jikexueyuan.com/project/scrapy/telnet-console.html" target="_blank" rel="noopener">Windows10开启telent服务</a><br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">telnet localhost 6023</span><br><span class="line">spider</span><br><span class="line">settings</span><br><span class="line">settings[<span class="string">"COOKIES_ENABLED"</span>]</span><br><span class="line">暂停：engine.pause()</span><br><span class="line">恢复：engine.unpause()</span><br><span class="line">停止：engine.stop()</span><br></pre></td></tr></table></figure></p><ul><li><strong>scrapy 的数据收集</strong></li><li><strong>http 404 页面收集</strong></li><li><strong>scrapy 信号详解</strong></li><li><strong>scrapy扩展开发（Middleware类似于扩展）</strong></li></ul><p>参考链接：</p><p>-<a href="http://blog.csdn.net/xnby/article/details/52297047" target="_blank" rel="noopener">Scrapy进阶,middleware的使用</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://wiki.jikexueyuan.com/project/scrapy/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Scrapy 中文指南&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://doc.scrapy.org/en/latest/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Scrapy 1.4 Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;scrapy 的暂停与重启&lt;/strong&gt;&lt;br&gt;不同的spider不能共用同一个目录、不同的run下不能共用同一个目录&lt;br&gt;&lt;strong&gt;ctrl+c&lt;/strong&gt; 暂停爬虫、点击两次、结束爬虫&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://blog.dongfei.xin/categories/Python/"/>
+    
+      <category term="Scrapy" scheme="http://blog.dongfei.xin/categories/Python/Scrapy/"/>
+    
+    
+      <category term="Python" scheme="http://blog.dongfei.xin/tags/Python/"/>
+    
+      <category term="Scrapy" scheme="http://blog.dongfei.xin/tags/Scrapy/"/>
     
   </entry>
   
