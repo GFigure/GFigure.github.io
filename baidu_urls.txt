@@ -1,3 +1,3 @@
+http://blog.dongfei.xin/2018-04-16/Vim-文本替换/
 http://blog.dongfei.xin/2018-04-15/Python3-中设置代理总结/
 http://blog.dongfei.xin/2018-04-13/Centos-安装-MongoDB/
-http://blog.dongfei.xin/2018-04-13/Centos-配置-Shadowsocks-翻墙/
